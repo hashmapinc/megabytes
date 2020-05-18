@@ -137,10 +137,10 @@ SHOW GRANTS OF ROLE DJANGO_UNCHAINED_DIRECTOR;
 
 
 //=============================================================================
-// Explore roles visually
+// Explore roles visually - snowflakeinspector.com
 //=============================================================================
 USE ROLE ACCOUNTADMIN;
-USE WAREHOUSE DEMO_WH;
+USE WAREHOUSE DEMO_WH; // select your own warehouse
 
 WITH 
 ROLE_GRANTS AS (
