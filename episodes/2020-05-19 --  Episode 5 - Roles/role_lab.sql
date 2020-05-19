@@ -142,6 +142,7 @@ SHOW GRANTS OF ROLE DJANGO_UNCHAINED_DIRECTOR;
 USE ROLE ACCOUNTADMIN;
 USE WAREHOUSE DEMO_WH; // select your own warehouse
 
+// NOTE - this query may not return updated results for up to an hour+ after creating the roles and users above. 
 WITH 
 ROLE_GRANTS AS (
   SELECT
