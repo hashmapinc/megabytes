@@ -1,4 +1,4 @@
-
+// Setting up SSO requires ACCOUNTADMIN access.
 USE ROLE ACCOUNTADMIN;
 
 // enable sso
@@ -12,3 +12,9 @@ ALTER ACCOUNT SET
 
 // enable the sso button on the login page
 ALTER ACCOUNT SET SSO_LOGIN_PAGE = TRUE;
+
+
+// Note: if you need to undo this, run the SQL below to remove everything from your Snowflake instance
+USE ROLE ACCOUNTADMIN;
+ALTER ACCOUNT UNSET SAML_IDENTITY_PROVIDER;
+ALTER ACCOUNT SET SSO_LOGIN_PAGE = FALSE;
