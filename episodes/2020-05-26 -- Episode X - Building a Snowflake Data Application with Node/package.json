@@ -2,7 +2,7 @@
   "name": "snowflake_node_sample",
   "version": "0.0.0",
   "description": "Sample node API server for using the Snowflake Cloud Data Platform in custom web applications",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "snowflake-sdk": "^1.5.2"
+  },
+  "devDependencies": {
+    "create-react-app": "^3.4.1",
+    "express-generator": "^4.16.1"
   }
 }
